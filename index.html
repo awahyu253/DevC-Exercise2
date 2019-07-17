@@ -6,6 +6,34 @@
 <body>
     <center>
         <h1>Kalkulator</h1>
+        <input id="panel" type="text" name="">
+        <table>
+        	<tr>
+        		<td><button onclick="document.getElementById('panel').value+='7'" >7</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='8'" >8</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='9'" >9</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='+';operasi ='penjumlahan';var1 = parseInt(document.getElementById('panel').value);document.getElementById('panel').value = ' '">+</button></td>
+        	</tr>
+        	<tr>
+        		<td><button onclick="document.getElementById('panel').value+='4'">4</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='5'">5</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='6'">6</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='+';operasi ='pengurangan';var1 = parseInt(document.getElementById('panel').value);document.getElementById('panel').value = ' '">-</button></td>
+        	</tr>
+        	<tr>
+        		<td><button onclick="document.getElementById('panel').value+='1'">1</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='2'">2</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='3'">3</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='+';operasi ='perkalian';var1 = parseInt(document.getElementById('panel').value);document.getElementById('panel').value = ' '">*</button></td>
+        	</tr>
+        	<tr>
+        		<td><button onclick="document.getElementById('panel').value=' '">C</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='0'">0</button></td>
+        		<td><button onclick="var2 = parseInt(document.getElementById('panel').value);hitung()">=</button></td>
+        		<td><button onclick="document.getElementById('panel').value+='+';operasi ='pembagian';var1 = parseInt(document.getElementById('panel').value);document.getElementById('panel').value = ' '">/</button></td>
+        	</tr>
+        </table>
     </center>
+    <script  src="script.js"></script>
 </body>
 </html>
